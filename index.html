@@ -45,8 +45,11 @@
 
         <!--logo-->
 
-        <div class="header-logo">
+        <div class="header-logo" data-aos="fade-up" data-aos-daley= "300" >
           <img
+          data-aos="flip-up"
+          data-aos-daley= "300"
+          data-aos-duration = "1500"
           src="assets/Logo.svg"
           alt="LogoMundo Fitness"
           >
@@ -54,13 +57,13 @@
 
         <!--botão-->
 
-        <div >
+        <div data-aos="fade-down">
           <a class="header-button" href="#">
             Entrar
           </a>
         </div>
       </nav>
-      <main class="hero container">
+      <main class="hero container" data-aos="fade-up" data-aos-daley="400">
         <h1 >TRANSFORME SEU CORPO, ELEVE SUA MENTE, O CORPO ALCANÇA O QUE A MENTE ACREDITA, NO MUNDO FITNESS!</h1>
         <p>Horário de funcionamento: Seg - Sex 08:00 ás 19:00 </p>
         <a href="#" class=" button-matricula" target="_blank">
@@ -74,12 +77,15 @@
 
   <section class="sobre">
     <div class="container sobre-content">
-      <div>
+      <div data-aos="zoom-in" data-aos-daley="100">
         <img src="./assets/sobre academia.svg" alt="Imagem Sobre a Academia">
         
       </div>
       <div>
-        <div class="sobre-descricao">
+        <div 
+        class="sobre-descricao"
+        data-aos="zoom-out-left" data-aos-delay="250"
+        >
           <h2>Sobre</h2>
           <p>No Mundo Fitness, você encontra tudo o que precisa para se exercitar 
             e se divertir, com uma estrutura completa e moderna, uma equipe de 
@@ -99,12 +105,12 @@
     <h2 class=" personal-treiner">Personal Treiner</h2>
     <div class="container personal-content">
       
-      <div>
+      <div data-aos="fade-right" data-aos-daley="350" data-aos-duration="600">
         <img src="./assets/personal-trainer1.jpg" alt="Imagem Sobre a personal">
         
       </div>
       <div>
-        <div class="personal-descricao">
+        <div class="personal-descricao" data-aos="fade-left" data-aos-daley="450" data-aos-duration="800">
           <p>Com mais de 10 anos de experiência em treinamento físico, os  nossos 
             Personal Trainer é um especialista em ajudar seus clientes a atingir 
             seus objetivos de saúde e fitness. Ele é altamente qualificado em 
@@ -121,7 +127,7 @@
   <section class="personal2">
     <div class="container personal-content1">
       <div>
-        <div class="personal-descricao">
+        <div class="personal-descricao" data-aos="fade-right" data-aos-daley="550" data-aos-duration="600">
           <p>Os nossos Personal Trainer  é um profissional altamente experiente e 
             qualificado em treinamento físico. Ele tem mais de 15 anos de 
              em ajudar seus clientes a alcançar seus objetivos de saúde e 
@@ -133,7 +139,7 @@
                de treino personalizados para atender a essas necessidades.</p>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-left" data-aos-daley="700" data-aos-duration="600">
         <img src="./assets/peronal-trainer2.jpeg" alt="Imagem Sobre a Personal">
         
       </div>
@@ -152,9 +158,11 @@
         orçamento. Veja só:</p>
     </div>
 
+
+
     <section class="cards">
 
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-daley= "250" data-aos-duration="1000">
         <img src="./assets/plano1.svg" alt="Plano mensal"/>
         <div class="preco-info">
           <strong>Plano Mensal</strong>
@@ -164,7 +172,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-daley= "450" data-aos-duration="1200">
         <img src="./assets/plano2.svg" alt="Plano mensal"/>
         <div class="preco-info">
           <strong>Plano Trimestral -16%</strong>
@@ -174,7 +182,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-daley= "650" data-aos-duration="1400">
         <img src="./assets/plano3.svg" alt="Plano mensal"/>
         <div class="preco-info">
           <strong>Plano Anual -33%</strong>
@@ -219,8 +227,14 @@
 </footer>
  <!--botão whats-->
 
- <a href="https://api.whatsapp.com/send?phone=5567984098077&text=Ol%C3%A1,%20Mundo%20Fitness,%20Quero%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20e%20benef%C3%ADcios?" class="btn-whatsapp" target="_blank">
-  <img src="./assets/whatsapp.svg" alt="Botão whatsapp">
+ <a href="https://api.whatsapp.com/send?phone=5567984098077&text=Ol%C3%A1,%20Mundo%20Fitness,%20Quero%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20e%20benef%C3%ADcios?" 
+ class="btn-whatsapp" 
+ target="_blank"
+ data-aos="zoom-in-up" data-aos-daley="400"
+ >
+  <img 
+  src="./assets/whatsapp.svg" alt="Botão whatsapp"
+  >
   <span class="tooltip-text">Entre em Contato</span>
  </a>
  <script src="./script.js"></script>
