@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    overflow: auto; 
+}
+
+.container-formulario {
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.balao-formulario {
+    background-color: rgba(10, 0, 0, 0.045);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    padding: 20px; 
+}
+
+.balao-pequeno {
+    padding: 5px; 
+}
+
+.balao-texto {
+    background-color: #8d0202;
+    color: #fff; 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    display: inline-block; 
+    max-width: max-content; 
+}
+
+.botao {
+    display: inline-block;
+    background-color: #bbb;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    color: #000000;
+    line-height: normal;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.botao--principal {
+    border-radius: 10px;
+    background-color: #fefdfe;
+}
+
+.botao--principal:hover,
+.botao--principal:focus {
+    background-color: #910606;
+}
+
+.layout-rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+}
+
+.botao-whatsapp {
+    display: inline;
+    background-color: #25d366;
+    color: #fff;
+    padding: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.botao-whatsapp img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.navegacao {
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
