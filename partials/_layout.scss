@@ -277,19 +277,76 @@
 
  .footer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 54px 0;
-  gap: 24px;
+  justify-content: space-around;
+  padding: 38px 0;
+  margin: 0 70px 0 70px;
+  gap: 14px;
   color: $white-normal;
  }
  .footer-icons{
   display: flex;
+  flex-direction: column;
   gap: 8px;
   color: $white-normal;
+  align-items: center;
  }
+ .footer{
+  .alinhamento{
+    display: flex;
+    flex-direction: row;
+    }.info-h1{
+      margin-right: 16px;
+    }.info-h2{
+      margin-left: 16px;
+    }
+  }
+  .info-h2 >h2{
+    margin-bottom: 20px;
+  }
 
+  .info-h1 >h2{
+    margin-bottom: 20px;
+  }
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.copy{
+  display: flex;
+  color: $white-normal;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+
+}
+.red{
+  color: $red-normal;
+}
+.info-li {
+  list-style: none;
+  margin-bottom: 14px; 
+
+}
+.info-li >a {
+  color: $white-normal;
+  transition: 0.3s;
+}
+.info-h2 >h2{
+  margin-bottom: 20px;
+}
+.info-li >a:hover {
+  color: $red-normal;
+}
+@media  screen and (max-width: 750px){
+  .footer{
+    align-items: center;
+    flex-direction: column;
+  }
+ }
 .btn-whatsapp{
   position: fixed;
   bottom: 24px;
@@ -330,3 +387,60 @@
   }
 }
 }
+
+@media screen and (max-width: 750px){
+  .info-h2 >h2{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 380px){
+  .info-h2 >h2{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .info-h2 > ul >li{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 380px){
+  .info-h2 >ul > li{
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 750px){
+  .info-h1 >h2{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 380px){
+  .info-h1 >h2{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 750px){
+  .info-h1 > ul >li{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 380px){
+  .info-h1 >ul > li{
+    font-size: 16px;
+  }
+}
+
+  @media screen and (max-width: 750px){
+    .copy{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 414px){
+    .copy{
+      font-size: 11px;
+    }
+    }
