@@ -235,7 +235,6 @@
   background-color: $white-normal;
   border-radius: 8px;
   box-shadow: 0px 1px 7px 0.3px rgba($white-normal , 0.45);
-
   overflow: hidden;
 
   img{
@@ -280,8 +279,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 38px 0;
-  margin: 0 70px 0 70px;
+  padding: 38px 70px 0 70px;
   gap: 14px;
   color: $white-normal;
  }

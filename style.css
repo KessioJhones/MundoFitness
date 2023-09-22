@@ -77,6 +77,30 @@ i {
     display: none;
   }
 }
+.header-button1 {
+  display: none;
+}
+
+.header-button1 {
+  border: 1px solid #fff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.header-button1:hover {
+  border: #FF3131;
+  background-color: #FF3131;
+  transition: background-color 0.7s;
+}
+
+@media screen and (max-width: 750px) {
+  .header-button1 {
+    display: flex;
+    margin: 24px 0 10px 0;
+  }
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -360,8 +384,7 @@ i {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 38px 0;
-  margin: 0 70px 0 70px;
+  padding: 38px 70px 0 70px;
   gap: 14px;
   color: #fff;
 }
@@ -524,6 +547,98 @@ i {
     font-size: 11px;
   }
 }
+.light-theme {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.3rem;
+  right: 5.6rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #edeaef #edeaef;
+  color: #fff;
+}
+@media screen and (max-width: 1280px) {
+  .light-theme {
+    top: 1.3rem;
+    right: 3.5rem;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .light-theme {
+    top: 1.3rem;
+    right: 3.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .light-theme {
+    top: 1.3rem;
+    right: 3rem;
+  }
+}
+
+.light-theme::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  font-size: 1.7rem;
+  position: relative;
+  color: #fff;
+}
+
+.light .light-theme::before {
+  content: "\f185";
+  color: #000;
+}
+
+.light .bg-home:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.2), #edeaef), url("../assets/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 1;
+}
+
+.light .sobre, .light .info-h1, .light .info-h2, .light .personal1, .light .personal2, .light .servicos, .light .copy {
+  background-color: #edeaef;
+}
+.light h2 {
+  color: #06121e;
+}
+.light li > a {
+  color: #06121e;
+}
+.light .fa-instagram, .light .fa-facebook, .light .fa-youtube, .light .fa-tiktok {
+  color: #06121e;
+}
+.light p {
+  color: #06121e;
+}
+
+.light .footer {
+  background-color: #edeaef;
+  margin-top: -5px;
+  z-index: 1;
+}
+
+.light .card {
+  box-shadow: 0px 1px 7px 0.5px rgba(6, 18, 30, 0.45);
+}
+
+.light h1 {
+  color: #0c2135;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
