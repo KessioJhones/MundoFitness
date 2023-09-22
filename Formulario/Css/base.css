@@ -1,3 +1,4 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #06121e;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -13,13 +14,27 @@ body {
 }
 
 .container-formulario {
-    background-image: url('fundo.jpg');
+    background-image: url('fundo_2k.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
+}
+
+/* Estilos para centralizar o título do formulário */
+.titulo-formulario {
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.espaco-superior {
+    margin-top: 40px;
 }
 
 .balao-formulario {
@@ -27,19 +42,16 @@ body {
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    padding: 20px; 
-}
-
-.balao-pequeno {
-    padding: 5px; 
+    padding: 10px;
+    margin-bottom: 30px; 
 }
 
 .balao-texto {
     background-color: #8d0202;
     color: #fff; 
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 10px; 
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
     display: inline-block; 
     max-width: max-content; 
 }
@@ -58,16 +70,17 @@ body {
 
 .botao--principal {
     border-radius: 10px;
-    background-color: #fefdfe;
+    background-color: #910606;
+    color: white;
 }
 
 .botao--principal:hover,
 .botao--principal:focus {
-    background-color: #910606;
+    background-color: #f70000;
 }
 
 .layout-rodape {
-    background-color: #333;
+    background-color: #06121e;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -76,6 +89,7 @@ body {
 .campo {
     width: 100%;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 .botao-whatsapp {
@@ -111,4 +125,19 @@ body {
 .logo {
     width: 100px;
     height: 100px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container-formulario {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* Adicione outras regras de estilo para tamanhos de tela menores aqui */
 }
