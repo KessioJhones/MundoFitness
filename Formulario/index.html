@@ -5,53 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mundo Fitness</title>
     <link rel="stylesheet" href="Css/bootstrap.min.css">
-    <link rel="stylesheet" href="Css/base.css">   
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header class="layout-cabecalho">
-        <div class="container">
-            <nav class="navegacao navegacao--assinatura">
-                <a href="Keey.html">
-                    <img src="Logo.svg" width="100" height="100" alt="Logo" class="logo">
-                </a>
-            </nav>
-        </div>
-    </header>
     <main class="layout--assinatura">
         <div class="container container-formulario">
             <form action="#" method="post">
-                <div class="balao-formulario">
+                <div class="balao-formulario  animate__animated animate__pulse">
                     <h1 class="titulo-formulario balao-texto"><strong>Preencha o Formulário</strong></h1>
                     <div class="grupo-entrada espaco-superior">
-                        <label class="balao-texto" for="nome-usuario">Nome do Usuário</label>
+                        <label class="balao-texto" for="nome-usuario"><strong>Nome do Usuario</strong></label>
                         <input id="nome-usuario" name="NomeUsuario" type="text" class="campo" required>
                     </div>                    
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="rg-cpf">RG ou CPF</label>
+                                <label class="balao-texto" for="rg-cpf"><strong>RG ou CPF</strong></label>
                                 <input id="rg-cpf" name="RGCpf" type="text" class="campo" required>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="data-nascimento">Data de Nascimento</label>
+                                <label class="balao-texto" for="data-nascimento"><strong>Data de Nascimento</strong></label>
                                 <input id="data-nascimento" name="DataNascimento" type="date" class="campo" required>
                             </div>
                         </div>
                     </div>
                     <div class="grupo-entrada">
-                        <label class="balao-texto" for="responsavel">Responsável</label>
+                        <label class="balao-texto" for="responsavel"><strong>Responsavel</strong></label>
                         <input id="responsavel" name="Responsavel" type="text" class="campo" required>
                     </div>
                     <div class="grupo-entrada">
-                        <label class="balao-texto" for="email">E-mail</label>
+                        <label class="balao-texto" for="email"><strong>Email</strong></label>
                         <input id="email" name="Email" type="email" class="campo" required>
                     </div>
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="estado">Estado</label>
+                                <label class="balao-texto" for="estado"><strong>Estado</strong></label>
                                 <select id="estado" name="Estado" class="campo">
                                     <option value="">Selecione</option>
                                     <option value="Ms">Mato Grosso do Sul</option>
@@ -60,7 +52,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="cidade">Cidade</label>
+                                <label class="balao-texto" for="cidade"><strong>Cidade</strong></label>
                                 <select id="cidade" name="Cidade" class="campo">
                                     <option value="">Selecione</option>
                                     <option value="1">Alcinópolis</option>                                 
@@ -71,13 +63,13 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="senha">Senha</label>
+                                <label class="balao-texto" for="senha"><strong>Senha</strong></label>
                                 <input id="senha" name="Senha" type="password" class="campo" required>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="grupo-entrada">
-                                <label class="balao-texto" for="confirmacao-senha">Confirme a Senha</label>
+                                <label class="balao-texto" for="confirmacao-senha"><strong>Confirme a Senha</strong></label>
                                 <input id="confirmacao-senha" name="ConfirmacaoSenha" type="password" class="campo" required>
                             </div>
                         </div>
@@ -89,6 +81,15 @@
             </form>
         </div>
     </main>
+    <header class="layout-cabecalho">
+        <div class="container">
+            <nav class="navegacao navegacao--assinatura">
+                <a href="Keey.html">
+                    <img src="Logo.svg" width="100" height="100" alt="Logo" class="logo">
+                </a>
+            </nav>
+        </div>
+    </header>
     <footer class="layout-rodape">
         <div class="container">
             <p class="borda-texto">&copy; Mundo Fitness. Todos os direitos reservados.</p>
@@ -97,5 +98,7 @@
     <a href="https://wa.me/5567984448448" target="_blank" class="botao-whatsapp" style="position: fixed; right: 20px; bottom: 20px;">
         <img src="WhatsApp-icone-3.png" alt="WhatsApp">
     </a>
+    <script src="javascripts/app.js"></script>
 </body>
 </html>
+
